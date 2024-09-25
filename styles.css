@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(199, 205, 210);
+}
+
+.boxcontainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 60px;
+}
+
+/* ------------------ box1 ------------------------- */
+
+.boxcontainer .box1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px 0px 0px 20px;
+  padding: 100px 200px;
+}
+
+.boxcontainer .box2 {
+    background-color: rgb(6, 90, 216);
+    border-radius: 0px 20px 20px 0px;
+    color: rgb(255, 255, 255);
+    padding: 100px 150px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.logo h2 {
+  color: rgb(6, 90, 216);
+  padding: 0px 10px;
+}
+
+.greet {
+  margin: 20px 0px;
+  line-height: 30px;
+}
+
+.greet p {
+  font-size: 13px;
+}
+
+.googlebtn,
+.facebookbtn {
+  position: relative;
+  display: inline-block;
+}
+
+input[type="button"] {
+  padding: 15px 50px 10px;
+  background-color: #eefaff66;
+  border-color: #c1c1c13b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.googlebtn img {
+  position: absolute;
+  width: 25px;
+  left: 20px;
+  top: 10px;
+}
+.facebookbtn img {
+  position: absolute;
+  width: 25px;
+  left: 20px;
+  top: 10px;
+}
+
+.choose {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.choose hr {
+    border: 1px solid rgb(156, 156, 156);
+    padding: 0px 45px;
+}
+
+.choose p {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------------ box1 form css ------------------------- */
+
+form {
+  width: 100%;
+}
+
+.inputbox1 {
+  position: relative;
+}
+.inputbox2 {
+  position: relative;
+}
+
+input[type="email"],
+[type="password"],
+[type="text"] {
+  padding: 15px 100px 10px 40px;
+  margin: 5px;
+  background-color: #eefaff66;
+  border-color: #c1c1c13b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form .fa-regular,
+.fa-solid {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  color: #aaa;
+}
+
+form #toggleBtn {
+  position: absolute;
+  cursor: pointer;
+  top: 25px;
+  color: #aaa;
+  right: 20px;
+}
+
+form #toggleBtn::before {
+  content: "\f070";
+  font-family: fontAwesome;
+}
+
+form #toggleBtn.hide::before {
+  content: "\f06e";
+}
+
+.boxcheck {
+    padding: 20px 0px;
+}
+
+form a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(6, 90, 216);
+    float: right;
+}
+
+form a:hover {
+  color: rgb(153, 6, 216);
+}
+
+input[type="submit"] {
+    background-color: rgb(6, 90, 216);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 2px solid rgb(0, 68, 170);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+}
+
+.createacc p {
+    font-size: smaller;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/*------------------------ box2 ----------------------*/
+
+/* ------------------ box2 slider ------------------------- */
+
+.slider {
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  display: flex;
+  position: relative;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.firstslide {
+  width: 100%;
+}
+
+.slide #slide-image {
+  width: 100%;
+  height: 400px;
+  padding: 0px 20px;
+  margin-bottom: 100px;
+}
+
+.navigation-menu {
+  position: absolute;
+  display: flex;
+  top: 90%;
+  left: 7%;
+}
+
+.menu-btn1,
+.menu-btn2,
+.menu-btn3 {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .firstbox {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .firstbox {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .firstbox {
+  margin-left: -40%;
+}
+
+.image-container {
+  display: flex;
+}
+
+#radio1:checked ~ .navigation-menu .menu-btn1 {
+  background: #ffffff;
+}
+
+#radio2:checked ~ .navigation-menu .menu-btn2 {
+  background: #ffffff;
+}
+
+#radio3:checked ~ .navigation-menu .menu-btn3 {
+  background: #ffffff;
+}
